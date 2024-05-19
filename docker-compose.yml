@@ -7,10 +7,10 @@ services:
   build: .
   ports:
    - '3000:3000'
-# link this container to the Mongo DB container
+ # link this container to the Mongo DB container
   links:
    - mongo
-# pass in environment variables for database host and name
+ # pass in environment variables for database host and name
   environment:
    - DB_HOST=mongo
    - DB_NAME=lafs-db
